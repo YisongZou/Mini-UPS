@@ -31,3 +31,6 @@ python3 upsCommunicator.py <worldIp> 12345
 ```
 worldIp is the Ip of the environment where world is running on
 ![avatar](https://github.com/YisongZou/Mini-UPS/blob/master/Picture1.png)
+![avatar](https://github.com/YisongZou/Mini-UPS/blob/master/Picture2.png)
+![avatar](https://github.com/YisongZou/Mini-UPS/blob/master/Picture3.png)
+![avatar](https://github.com/YisongZou/Mini-UPS/blob/master/Picture4.png)
