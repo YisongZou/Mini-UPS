@@ -1,4 +1,4 @@
-# Mini Ups
+# Mini Ups( Collaborates with Mini Amazon )
 
 Constructed web app with separate tiers (UI, server and database), provide online delivering management service.
 
