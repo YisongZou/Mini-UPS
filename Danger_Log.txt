@@ -1,0 +1,24 @@
+ECE568 Project Danger Log
+
+1. For this project, we did well on building user model in Django. 
+We ensures that only after logging in can users to use functionality
+of website.
+
+2. The password of user is required to conform a specific format that is not 
+simple. Also all passwords are hashed and salted.
+
+3. When user needs to change password of the account, they will receive a email 
+to reset password, which increases the security.
+
+4. In the backend, when sending and receiving message, we will first contain the 
+length of that message, so that each communication will not fetch wrong 
+information.
+
+5. I separate the communications with Amazon and world, and created several 
+threads inside these two threads. Each single thread is only responsible for 
+specific kind of tasks, like receiving message, send message, read form 
+information queue. fetch message from information queue and carry out 
+corresponding actions. In that case, race conditions can be easily handled. 
+
+6. Because of the existence of those functional threads, the scalability of 
+this backend server is good.

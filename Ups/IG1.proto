@@ -1,0 +1,77 @@
+syntax = "proto2";
+
+
+package IG1;
+
+
+message AMsg{
+            repeated ASendTruck asendtruck = 1;                                      
+            repeated AFinishLoading afinishloading = 2;                            
+            repeated int64 acks = 3;                                                
+}
+
+
+message UMsg{
+            repeated UOrderPlaced uorderplaced = 1;                  
+            repeated UTruckArrived utruckarrived = 2; // Truck arrived at the warehouse          
+            repeated UPkgDelivered upkgdelivered = 3; // Package delivered
+optional UInitialWorld initworld = 4;             
+            repeated int64 acks = 5;                              
+}
+
+
+message UInitialWorld{
+        required int64 worldid = 1;
+        required int64 seq = 2;
+}
+
+
+message ASendTruck{
+            required WarehouseInfo whinfo = 1;
+            required int32 x = 2;                                               
+            required int32 y = 3;                                               
+            required int64 pkgid = 4; // Package ID                  
+            repeated Product products = 5; // The products in a package 
+            optional string upsid = 6;            
+            required int64 seq = 7; // Sequence number          
+}
+
+
+message WarehouseInfo{
+        required int32 whid = 1; //The warehouse ID
+        required int32 x = 2;      // x coordinate of wh
+        required int32 y = 3;      // y coordinate of wh
+}
+
+
+message Product{
+            required int64 id = 1; //Product ID                           
+            required string description = 2; //Product description                
+            required int32 count = 3; // Number of product    
+}
+
+
+message UOrderPlaced{
+            required int64 pkgid = 1; // Package ID                  
+            required int32 truckid = 2; // Truck ID                     
+            required int64 seq = 3; //Sequence number           
+}
+
+
+message UTruckArrived{
+            required int32 truckid = 1; //Truck ID                      
+            required int64 seq = 2; //Sequence number           
+}
+
+
+message AFinishLoading{
+            required int64 pkgid = 1; //Package ID                    
+            required int32 truckid = 2; //Truck ID                       
+            required int64 seq = 3; //Sequence number            
+}
+
+
+message UPkgDelivered{
+            required int64 pkgid = 1;                
+            required int64 seq = 2;                   
+}
