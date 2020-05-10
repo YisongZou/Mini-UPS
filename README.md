@@ -9,7 +9,7 @@ Assigned server tier to communicate with a real-world simulator to access trucks
 Synchronized and stored data by providing a cloud Postgres database shared between UI and server
 
 ![avatar](https://upload.wikimedia.org/wikipedia/commons/1/1b/UPS_Logo_Shield_2017.svg)
-![avatar](https://github.com/YisongZou/Mini-UPS/blob/master/Picture1.png)
+
 
 ```
 For the website frontend and backend we use Django
@@ -30,3 +30,4 @@ cd Ups
 python3 upsCommunicator.py <worldIp> 12345
 ```
 worldIp is the Ip of the environment where world is running on
+![avatar](https://github.com/YisongZou/Mini-UPS/blob/master/Picture1.png)
