@@ -1,4 +1,4 @@
-# ECE568 Project for Group2 IG1
+# Mini Ups
 
 ![avatar](https://upload.wikimedia.org/wikipedia/commons/1/1b/UPS_Logo_Shield_2017.svg)
 
