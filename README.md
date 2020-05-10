@@ -1,5 +1,7 @@
 # Mini Ups
 
+Constructed web app with separate tiers (UI, server and database), provide online delivering management service Set up UI tier with Django to receive requests from users and interact with server and database logically Assigned server tier to communicate with a real-world simulator to access trucks for Ups and delivering information, and an Amazon server to provide online shopping experience. Synchronized and stored data by providing a cloud Postgres database shared between UI and server
+
 ![avatar](https://upload.wikimedia.org/wikipedia/commons/1/1b/UPS_Logo_Shield_2017.svg)
 
 ```
